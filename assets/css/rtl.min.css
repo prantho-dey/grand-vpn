@@ -1,0 +1,34 @@
+.bpn-chose-title h2 {
+  margin-left: 0px;
+  margin-right: 8px;
+}
+
+.chose-package-box .percent {
+  right: auto;
+  left: -1px;
+}
+.chose-package-box .percent span {
+  border-radius: 10px 1px 0px 0px;
+}
+.chose-package-box .chose-package-content .amount {
+  text-align: left;
+}
+.chose-package-box .chose-package-content .amount .check {
+  margin: 15px auto 0px 0;
+}
+
+.chose-package-button a i {
+  margin-left: 0;
+  margin-right: 6px;
+}
+.chose-package-button a:hover i {
+  margin-left: 0px;
+  margin-right: 9px;
+}
+
+.payment-box .payment-box-content h2 {
+  margin-left: 0px;
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=rtl.min.css.map */

@@ -1,0 +1,8 @@
+@font-face
+{
+    font-family: 'PingFang';
+  src: url('../fonts/ SC Regular.eot'),
+     url('../fonts/PingFang SC Regular.eot?#') format('embedded-opentype'),
+      url('../fonts/PingFang SC Regular.woff') format('woff'),
+      url('../fonts/PingFang SC Regular.ttf') format('truetype');
+}

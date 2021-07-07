@@ -1,0 +1,47 @@
+
+.bpn-chose-title {
+    h2 {
+        margin-left: 0px;
+        margin-right: 8px;
+    }
+}
+
+.chose-package-box {
+    .percent {
+        right: auto;
+        left: -1px;
+        span {
+            border-radius: 10px 1px 0px 0px;
+        }
+    }
+    .chose-package-content {
+        .amount {
+            text-align: left;
+            .check {
+                margin: 15px auto 0px 0;
+            }
+        }
+    }
+}
+.chose-package-button {
+    a {
+        i {
+            margin-left: 0;
+            margin-right: 6px;
+        }
+        &:hover {
+            i {
+                margin-left: 0px;
+                margin-right: 9px;
+            }
+        }
+    }
+}
+.payment-box {
+    .payment-box-content {
+        h2 {
+            margin-left: 0px;
+            margin-right: 10px;
+        }
+    }
+}
