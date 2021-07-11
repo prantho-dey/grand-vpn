@@ -110,6 +110,73 @@ h6 {
   color: #FF3F3F;
 }
 
+.achivement-tag {
+  position: relative;
+}
+.achivement-tag .achivement-tab-card {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 113px;
+  height: 70px;
+  position: absolute;
+  left: 50%;
+  top: -50%;
+  transform: translate(-50%, 40%);
+  z-index: 9;
+}
+.achivement-tag .achivement-tab-card h4 {
+  font-size: 12px;
+  line-height: 14px;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+.achivement-tag .achivement-tab-card p {
+  color: #000000;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 14px;
+  position: absolute;
+  top: 38px;
+  left: 50%;
+  transform: translateX(-56%);
+}
+
+.count-down {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 40px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.count-down h4 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+.count-down .countdown-clock {
+  display: flex;
+  margin-left: 5px;
+}
+.count-down .countdown-clock .countdown-item .ci-inner {
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+
 .vpn-chose-package-wrapper {
   background-color: #FFFFFF;
   padding: 20px 20px 30px;
@@ -141,6 +208,10 @@ h6 {
   line-height: 1;
   margin-left: 8px;
   text-transform: capitalize;
+}
+
+.chose-package {
+  margin-top: 50px;
 }
 
 .single-chose-package {
