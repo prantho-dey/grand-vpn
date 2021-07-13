@@ -1,6 +1,7 @@
 .vpn-area {
     max-width: 375px;
 	margin: 10px auto 0px;
+    background-color: #fff;
 }
 
 .vpn-top-wrapper {
@@ -145,8 +146,7 @@
 // Vpn Chose Style Start Here
 .vpn-chose-package-wrapper {
     background-color: #FFFFFF;
-    padding: 20px 20px 30px;
-    margin-bottom: 20px;
+    padding: 20px 20px 20px;
 }
 .bpn-chose-title {
     display: flex;
@@ -188,8 +188,13 @@
     display: none;
     &:checked {
         ~.chose-package-box {
-            border-color: $theme-color;
+            box-shadow: 0 0 0 3px $theme-color;
+            border-color: transparent;
+            .checked {
+                opacity: 1;
+            }
             .percent {
+                // right: -3px;
                 span {
                     background-color: $theme-color;
                 }
@@ -219,6 +224,17 @@
     position: relative;
     border-radius: 10px;
     transition: all .3s ease-in-out;
+    .checked {
+        position: absolute;
+        content: "";
+        left: 5px;
+        top: 5px;
+        opacity: 0;
+        transition: all .3s ease-in-out;
+        i {
+            color: $theme-color;
+        }
+    }
     .percent {
         position: absolute;
         top: -1px;
@@ -264,6 +280,7 @@
         }
         .amount {
             text-align: right;
+            transition: all .3s ease-in-out;
             span {
                 font-size: 16px;
                 color: $heading-color;
@@ -340,7 +357,13 @@
 // Payment Method Style Start Here
 .payment-methos-wrapper {
     background-color: #fff;
-    padding: 20px 20px 30px;
+    padding: 30px 20px 30px;
+}
+
+// Border Top
+.border-top {
+    border-top: 1px solid #DDDDDE;
+    padding-top: 30px;
 }
 .single-payment-method {
     margin-bottom: 15px;
@@ -451,6 +474,7 @@
     }
 }
 .payment-method-button {
+    text-align: center;
     a {
         display: inline-block;
         color: #fff;

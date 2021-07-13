@@ -3,6 +3,10 @@
   margin-right: 8px;
 }
 
+.chose-package-box .checked {
+  left: auto;
+  right: 5px;
+}
 .chose-package-box .percent {
   right: auto;
   left: -1px;
@@ -31,5 +35,10 @@
   margin-right: 10px;
 }
 
+.count-down .countdown-clock {
+  display: flex;
+  margin-left: 0;
+  margin-right: 5px;
+}
 
 /*# sourceMappingURL=rtl.min.css.map */

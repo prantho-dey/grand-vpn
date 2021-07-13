@@ -1,0 +1,238 @@
+
+.customize-area {
+    max-width: 375px;
+	margin: 10px auto 0px;
+    background-color: #fff;
+}
+
+.customize-title {
+    margin-top: 20px;
+    padding: 0px 20px;
+}
+
+.customize-wrapper {
+    margin: 70px 20px 0px;
+    border: 1px solid #DDDDDE;
+    border-radius: 10px;
+}
+.customize-img {
+    margin-top: -59px;
+    text-align: center;
+}
+
+// Time Line Slider 
+
+
+/* --- Start progress bar --- */
+
+.process-wrapper {
+	margin:30px auto 20px;
+	max-width: 230px;
+}
+#progress-bar-container {
+	position: relative;
+	width: 100%;
+	margin: auto;
+	height: 20px;
+    margin-top: 10px;
+	ul {
+		padding: 0;
+		margin: 0;
+		z-index: 9999;
+		position: absolute;
+		width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li {
+            width: 20px;
+            height: 20px;
+            background-color: #fbfbfb;
+            border-radius: 50%;
+            border: 1px solid #D3D3D3;
+            display: inline-block;
+            transition: all .7s ease-in-out;
+            &.active {
+                background-color: #0478F9;
+                border: transparent;
+            }
+        }
+	}
+
+	#line {
+		width: 100%;
+		margin: auto;
+		background: #fbfbfb;
+		height: 6px;
+        border: 1px solid #D3D3D3;
+		position: absolute;
+		left: 0%;
+		top: 7px;
+		z-index: 1;
+		border-radius: 50px;
+		transition: all ease 0.9s;
+
+        #line-progress {
+            content: " ";
+            width: 6%;
+            height: 100%;
+            background: #0478F9;
+            border: 1px solid #0478F9;
+            position: absolute;
+            z-index: 2;
+            border-radius: 50px;
+            transition: all ease 0.9s;
+    
+        }
+	}
+}
+
+#progress-content-section {
+	width: 100%;
+	margin: auto;
+	.section-content {
+		text-align: center;
+		display: none;
+		animation: FadeInUp 700ms ease 1;
+		animation-fill-mode: forwards;
+		transform: translateY(15px);
+		opacity: 0;
+		h2 {
+			font-size: 16px;
+			font-weight: bold;
+            line-height: 22px;
+            color: #000000;
+            margin-bottom: 10px;
+		}
+		p {
+			font-size: 14px;
+			line-height: 20px;
+			color: #0478F9;
+		}
+	}
+	.section-content {
+        &.active {
+            display: block;
+        }
+    }
+}
+
+@keyframes FadeInUp {
+	0% {
+		transform: translateY(15px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+
+
+// quantity
+.quantity-wrapper {
+    max-width: 185px;
+    margin: 0 auto;
+}
+.quantity {
+    display: flex;
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    border-radius: 33px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+
+    button {
+        outline: none;
+        border: none;
+        &:focus {
+            outline: none;
+        }
+        i {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: $theme-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 20px;
+        }
+        &.disabled {
+            i {
+                opacity: 0.5;
+                cursor: not-allowed;
+            }
+        }
+    }
+    .input-fild {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        #quantity {
+            width: 20px;
+            border: transparent;
+            text-align: center;
+            outline: none;
+            font-size: 16px;
+            color: black;
+            font-weight: bold;
+        }
+    }
+}
+.off-tag {
+    text-align: center; 
+    margin: 20px 0px 10px;
+    span {
+        // padding: 2px 10px;
+        height: 24px;
+        width: 80px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        background: $theme-color;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
+
+// Price
+.total-price {
+    text-align: center;
+    h1 {
+        font-size: 30px;
+        color: black;
+        line-height: 36px;
+        display: inline-block;
+        font-weight: bold;
+    }
+    span {
+        font-size: 27px;
+        color: black;
+        line-height: 36px;
+        display: inline-block;
+    }
+}
+
+// Bottom Text
+.bottom-text {
+    text-align: center;
+    margin: 19px 0px 30px;
+    p {
+        color: #959595;
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+// Button
+.customize-area-button {
+    margin-top: 110px;
+    margin-bottom: 50px;
+}

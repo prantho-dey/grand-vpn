@@ -7,6 +7,10 @@
 }
 
 .chose-package-box {
+    .checked {
+        left: auto;
+        right: 5px;
+    }
     .percent {
         right: auto;
         left: -1px;
